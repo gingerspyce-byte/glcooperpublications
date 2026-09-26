@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G.C. Puzzle Books — Large-print puzzles and trivia for adults</title>
+<meta name="description" content="G.C. Puzzle Books, an imprint of GLCooper Publications. Large-print word searches, retro trivia and adult colouring — generous grids, clean type, solutions in the back.">
+<link rel="icon" href="images/ginger-cooper-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body data-view="puzzles">
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<div id="veil" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="index.html">
+      <b>G.L. COOPER</b>
+      <span>GLCooper Publications</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Nonfiction</a>
+      <a href="childrens.html">Children's</a>
+      <a href="puzzles.html" aria-current="page">Puzzles</a>
+      <a href="about.html">About Ginger</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap banner">
+    <p class="eyebrow">An imprint of GLCooper Publications</p>
+    <h1>G.C. <em>Puzzle Books</em></h1>
+    <p>Large-print puzzles built for real eyes and real chairs &mdash; generous grids, clean type, and themes worth spending an evening inside. Solutions in the back, and no squinting anywhere.</p>
+    <span class="imprint">Good horses, brighter days</span>
+  </div>
+
+  <section class="panel">
+    <div class="wrap">
+
+      <div class="subhead">
+        <h3>Word searches</h3>
+        <span class="line"></span>
+        <span class="count">5 titles</span>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <div class="cover tint-c">
+            <img src="images/camping-in-canada-cover.png" alt="Camping in Canada Word Search &mdash; cover">
+            <span class="spine-label">Outdoors</span><span class="ct">Camping in Canada Word Search</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Nature &amp; Outdoors</span>
+            <h3>Camping in Canada Word Search</h3>
+            <p class="blurb">Campsites, lakes, trails and wildlife &mdash; explore the great outdoors one puzzle at a time.</p>
+            <p class="spec">110 pages &middot; large print</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HCBKZYQ5" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-d">
+            <span class="spine-label">Retro</span><span class="ct">70's Nostalgia Word Search</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Retro</span>
+            <h3>70's Nostalgia Word Search</h3>
+            <p class="blurb">Disco, music and everything else the seventies got right.</p>
+            <p class="spec">110 pages &middot; 50+ puzzles &middot; large print</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HFD47HJH" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-b">
+            <img src="images/nostalgia-80s-cover.jpg" alt="80's Nostalgia Word Search &mdash; cover">
+            <span class="spine-label">Retro</span><span class="ct">80's Nostalgia Word Search</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Retro</span>
+            <h3>80's Nostalgia Word Search</h3>
+            <p class="blurb">Easy-to-read retro word finds for adults and seniors, reliving the totally awesome eighties.</p>
+            <p class="spec">Large print</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HK16RV3Z" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-e">
+            <img src="images/autumn-vibes-cover.jpg" alt="Autumn Comfy Cozy Vibes Word Search &mdash; cover">
+            <span class="spine-label">Autumn</span><span class="ct">Autumn Comfy Cozy Vibes Word Search</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Seasonal</span>
+            <h3>Autumn Comfy Cozy Vibes Word Search</h3>
+            <p class="blurb">A delightful collection of word searches for the season of blankets and woodsmoke.</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HHXT96PN" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-a">
+            <img src="images/horse-cover.png" alt="Horses Word Search for Adults &mdash; cover">
+            <span class="spine-label">Animals</span><span class="ct">Horses Word Search for Adults</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Animals</span>
+            <h3>Horses Word Search for Adults</h3>
+            <p class="blurb">Breeds, horse care, equipment, riding disciplines, famous horses and equestrian terms.</p>
+            <p class="spec">50+ puzzles &middot; large print &middot; solutions included</p>
+            <span class="soon">Coming soon</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="subhead">
+        <h3>Crosswords &amp; mixed puzzles</h3>
+        <span class="line"></span>
+        <span class="count">2 titles</span>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <div class="cover tint-d">
+            <img src="images/comfy-cozy-autumn-puzzle-cover.jpg" alt="Comfy Cozy Autumn Puzzle Book &mdash; cover">
+            <span class="spine-label">Mixed</span><span class="ct">Comfy Cozy Autumn Puzzle Book</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Mixed puzzles</span>
+            <h3>Comfy Cozy Autumn Puzzle Book</h3>
+            <p class="blurb">Word search, mazes, cryptograms, word scrambles and fall trivia in one book.</p>
+            <p class="spec">40 puzzles &middot; easy &middot; large print</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HJNV795P" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-b">
+            <img src="images/classic-80s-crossword-cover.jpg" alt="Classic 80s Pop Culture Crossword Puzzles &mdash; cover">
+            <span class="spine-label">Crosswords</span><span class="ct">Classic 80s Pop Culture Crossword Puzzles</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Crosswords</span>
+            <h3>Classic 80s Pop Culture Crossword Puzzles</h3>
+            <p class="blurb">Brain teasers for fans of retro music, movies and nostalgic trends.</p>
+            <span class="soon">Coming soon</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="subhead">
+        <h3>Trivia</h3>
+        <span class="line"></span>
+        <span class="count">2 titles</span>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <div class="cover tint-a">
+            <img src="images/sitcom-cover.png" alt="Sitcom Time Machine &mdash; cover">
+            <span class="spine-label">Television</span><span class="ct">Sitcom Time Machine</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Television trivia</span>
+            <h3>Sitcom Time Machine</h3>
+            <p class="blurb">Retro trivia for the 70s, 80s and 90s &mdash; the ultimate sitcom challenge.</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HJY546S7" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <div class="cover tint-b">
+            <img src="images/david-bowie-trivia-cover.jpg" alt="David Bowie Trivia Book For Seniors &mdash; cover">
+            <span class="spine-label">Music</span><span class="ct">David Bowie Trivia Book For Seniors</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Music trivia</span>
+            <h3>David Bowie Trivia Book For Seniors</h3>
+            <p class="blurb">A nostalgic trivia challenge for fans of the Starman.</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HJY5XT4N" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="subhead">
+        <h3>Colouring for grown-ups</h3>
+        <span class="line"></span>
+        <span class="count">1 title</span>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <div class="cover tint-c">
+            <img src="images/mindful-mandalas-cover.png" alt="Mindful Mandalas &mdash; cover">
+            <span class="spine-label">Colouring</span><span class="ct">Mindful Mandalas</span><span class="ca">G.C. Puzzle Books</span>
+          </div>
+          <div class="meta">
+            <span class="cat">Adult colouring</span>
+            <h3>Mindful Mandalas</h3>
+            <p class="blurb">An adult colouring book for stress relief &mdash; one pattern at a time.</p>
+            <a class="buy" href="https://www.amazon.com/dp/B0HJ9312JQ" target="_blank" rel="noopener">Buy on Amazon</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="doors">
+        <a class="door" href="index.html">
+          <h3>Nonfiction</h3>
+          <p>Ginger's adult nonfiction list &mdash; infrastructure, psychology, technology and true crime.</p>
+          <span class="go">Visit the nonfiction shelf &rarr;</span>
+        </a>
+        <a class="door" href="childrens.html">
+          <h3>Children's Books</h3>
+          <p>Picture books, a bilingual counting book and colouring for young readers.</p>
+          <span class="go">Visit the children's shelf &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <blockquote class="quote">
+          &ldquo;Books should leave you with something &mdash; an idea, a question, a smile, or a new way of seeing things.&rdquo;
+          <span class="quote-attr">Ginger Cooper</span>
+        </blockquote>
+      </div>
+      <div class="foot-col">
+        <h4>Shelves</h4>
+        <ul>
+          <li><a href="index.html">Nonfiction</a></li>
+          <li><a href="childrens.html">Children's books</a></li>
+          <li><a href="puzzles.html">G.C. Puzzle Books</a></li>
+          <li><a href="about.html">About Ginger</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Email the publisher</a></li>
+          <li><a href="contact.html">Rights &amp; permissions</a></li>
+          <li><a href="contact.html">Press enquiries</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>&copy; 2026 GLCooper Publications &middot; Greater Sudbury, Ontario</span>
+      <span>Set in Cormorant Garamond &amp; Karla</span>
+    </div>
+  </div>
+</footer>
+
+<script src="starfield.js"></script>
+</body>
+</html>

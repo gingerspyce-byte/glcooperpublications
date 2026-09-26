@@ -1,0 +1,63 @@
+HORSES WORD SEARCH — COVER FIX
+GLCooper Publications · prepared 16 September 2026
+
+WHAT WAS ACTUALLY WRONG
+-----------------------
+The CSS on your site was never the problem. The stylesheet already used
+"object-fit: contain", which cannot crop an image. Three separate rounds of
+horse-cover CSS fixes had been stacked into style-v2.css, all of them live and
+all of them working correctly.
+
+The real fault was the image file itself: images/horse-cover.png had already
+had the left and right edges cut off the artwork before it was ever zipped.
+No stylesheet change could put them back.
+
+WHAT THIS PACKAGE DOES
+----------------------
+1. Adds images/horse-cover-v2.jpg — the complete front cover, cut cleanly from
+   your full wrap PDF at the spine edge. 700 x 1077 px, 315 KB.
+   A new filename is used on purpose, so no browser or server cache can
+   serve the old cropped picture again.
+
+2. index.html — points the home-page card at the new image.
+
+3. books.html — points the catalogue entry at the new image, and adds the
+   "actual-cover" class so it gets the same padding and drop shadow as your
+   other real covers (Serial Killers, Wired Minds).
+
+4. style-v2.css — removes the three contradictory horse-cover rule blocks.
+   The book now uses the same cover rules as every other title. Nothing else
+   in the stylesheet was touched.
+
+
+HOW TO INSTALL ON NAMECHEAP
+---------------------------
+1. Log in to cPanel and open File Manager.
+2. Go into public_html.
+3. Upload this zip file INTO public_html.
+4. Right-click the zip and choose Extract. Extract it into public_html itself,
+   not into a new folder.
+
+   IMPORTANT: the files in this zip sit at the top level on purpose. If cPanel
+   creates a folder such as "glcooper-horse-cover-fix" and puts them inside it,
+   the site will not change. Move the contents up into public_html and delete
+   the empty folder.
+
+5. It will ask to overwrite index.html, books.html and style-v2.css. Yes,
+   overwrite them.
+6. Visit your site and press Ctrl+Shift+R (Cmd+Shift+R on a Mac) to reload.
+
+Optional tidy-up: the old images/horse-cover.png is no longer used by any page
+and can be deleted whenever you like.
+
+
+WORDING NOW MATCHES THE COVER
+-----------------------------
+- Title on both pages: "Horse Word Search" -> "Horses Word Search"
+- Catalogue description: "54 fun and challenging horse-themed word searches"
+  -> "50+ fun and challenging horse-themed word searches in large,
+      easy-to-read print"
+
+  ("50+" is what the cover badge and the back-cover copy both claim. 54 was
+  true but it contradicted the artwork, and "large print" appears on the cover
+  as a selling point, so it is now said on the page too.)
